@@ -8,12 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var date = Date()
     var body: some View {
         ///UII
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            DatePicker(
+                "",
+                selection: $date,
+                displayedComponents: [.date]
+            )
+            .datePickerStyle(GraphicalDatePickerStyle())
+            Spacer()
+            
+            ///quit application
+            Button(action: {
+                NSApplication.shared.terminate(self)
+            }) {
+                Text("Quit  ⌘Q")
+                    .frame(maxWidth: .infinity)
+            }.frame(maxWidth: .infinity)
+                .padding()
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

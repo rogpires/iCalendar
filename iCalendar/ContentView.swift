@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var date = Date()
     var body: some View {
-        ///UII
+        ///UI
         VStack {
             DatePicker(
                 "",
@@ -18,16 +18,20 @@ struct ContentView: View {
                 displayedComponents: [.date]
             )
             .datePickerStyle(GraphicalDatePickerStyle())
-            Spacer()
+            .padding(10)
             
-            ///quit application
+            ///quiting application
             Button(action: {
                 NSApplication.shared.terminate(self)
             }) {
                 Text("Quit  ⌘Q")
                     .frame(maxWidth: .infinity)
             }.frame(maxWidth: .infinity)
-                .padding()
+                .padding(1)
+            
+            Text("@rogeriocpires")
+                .font(.system(size: 10))
+                .padding(8)
         }
     }
 }

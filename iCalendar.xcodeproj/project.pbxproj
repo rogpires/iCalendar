@@ -11,6 +11,11 @@
 		031F65BF28C8053F00948C9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031F65BE28C8053F00948C9E /* ContentView.swift */; };
 		031F65C128C8054100948C9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031F65C028C8054100948C9E /* Assets.xcassets */; };
 		031F65C428C8054100948C9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031F65C328C8054100948C9E /* Preview Assets.xcassets */; };
+		032E02C028E65E19005BD045 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031F65BE28C8053F00948C9E /* ContentView.swift */; };
+		032E02C128E65E19005BD045 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03840BE328C931F7001C4246 /* StatusBarController.swift */; };
+		032E02C228E65E19005BD045 /* iCalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031F65BC28C8053F00948C9E /* iCalendarApp.swift */; };
+		032E02C528E65E19005BD045 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031F65C328C8054100948C9E /* Preview Assets.xcassets */; };
+		032E02C628E65E19005BD045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031F65C028C8054100948C9E /* Assets.xcassets */; };
 		03840BE428C931F7001C4246 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03840BE328C931F7001C4246 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +26,19 @@
 		031F65C028C8054100948C9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		031F65C328C8054100948C9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		031F65C528C8054100948C9E /* iCalendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCalendar.entitlements; sourceTree = "<group>"; };
+		032E02CA28E65E19005BD045 /* iCalendar copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iCalendar copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03840BE328C931F7001C4246 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		031F65B628C8053F00948C9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E02C328E65E19005BD045 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				031F65B928C8053F00948C9E /* iCalendar.app */,
+				032E02CA28E65E19005BD045 /* iCalendar copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +106,23 @@
 			productReference = 031F65B928C8053F00948C9E /* iCalendar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		032E02BE28E65E19005BD045 /* iCalendar copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032E02C728E65E19005BD045 /* Build configuration list for PBXNativeTarget "iCalendar copy" */;
+			buildPhases = (
+				032E02BF28E65E19005BD045 /* Sources */,
+				032E02C328E65E19005BD045 /* Frameworks */,
+				032E02C428E65E19005BD045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iCalendar copy";
+			productName = iCalendar;
+			productReference = 032E02CA28E65E19005BD045 /* iCalendar copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,6 +152,7 @@
 			projectRoot = "";
 			targets = (
 				031F65B828C8053F00948C9E /* iCalendar */,
+				032E02BE28E65E19005BD045 /* iCalendar copy */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +167,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		032E02C428E65E19005BD045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E02C528E65E19005BD045 /* Preview Assets.xcassets in Resources */,
+				032E02C628E65E19005BD045 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -145,6 +186,16 @@
 				031F65BF28C8053F00948C9E /* ContentView.swift in Sources */,
 				03840BE428C931F7001C4246 /* StatusBarController.swift in Sources */,
 				031F65BD28C8053F00948C9E /* iCalendarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E02BF28E65E19005BD045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E02C028E65E19005BD045 /* ContentView.swift in Sources */,
+				032E02C128E65E19005BD045 /* StatusBarController.swift in Sources */,
+				032E02C228E65E19005BD045 /* iCalendarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +369,60 @@
 			};
 			name = Release;
 		};
+		032E02C828E65E19005BD045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCalendar/iCalendar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 82CYP6YDK3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pires.rogerio.icalendar.iCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		032E02C928E65E19005BD045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iCalendar/iCalendar.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCalendar/Preview Content\"";
+				DEVELOPMENT_TEAM = 82CYP6YDK3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pires.rogerio.icalendar.iCalendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +440,15 @@
 			buildConfigurations = (
 				031F65C928C8054100948C9E /* Debug */,
 				031F65CA28C8054100948C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032E02C728E65E19005BD045 /* Build configuration list for PBXNativeTarget "iCalendar copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032E02C828E65E19005BD045 /* Debug */,
+				032E02C928E65E19005BD045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

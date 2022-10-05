@@ -25,9 +25,12 @@ struct ContentView: View {
                 NSApplication.shared.terminate(self)
             }) {
                 Text("Quit  ⌘Q")
-                    .frame(maxWidth: .infinity)
-            }.frame(maxWidth: .infinity)
-                .padding(1)
+                  //  .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+           .frame(maxWidth: .infinity)
+              .padding(4)
             
             Text("@rogeriocpires")
                 .font(.system(size: 10))
